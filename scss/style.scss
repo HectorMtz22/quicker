@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color1: #f1f5f4;
+  --color2: #c5b5cc;
+  --color3: #f5b121;
+  --color4: #6574c7;
+  --color5: #f1a8a0;
+}
+
+$header_height: 40px;
+$transition: 500ms ease;
+
+body {
+  background-color: var(--color1);
+}
+
+@import "header";
+@import "background";
+@import "content";
+@import "footer";

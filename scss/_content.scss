@@ -1,0 +1,50 @@
+.content {
+  padding: 20px 5%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    * {
+      padding: 10px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    padding: 30px;
+    .checks {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      grid-template-areas:
+        "img text1"
+        "img text2";
+      img {
+        grid-area: img;
+        width: 100px;
+      }
+      &:nth-child(2) {
+        grid-area: text1;
+      }
+      &:nth-child(3) {
+        grid-area: text2;
+      }
+    }
+  }
+  .image {
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  .buttons:nth-child(1) {
+    margin-right: 10px;
+  }
+}

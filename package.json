@@ -1,0 +1,15 @@
+{
+  "name": "quicker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch scss/style.scss --output css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
