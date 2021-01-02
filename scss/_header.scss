@@ -82,3 +82,9 @@ button {
   color: #fff;
   background-color: var(--color4);
 }
+
+@media screen and (max-width: 800px) {
+  header nav {
+    display: none;
+  }
+}

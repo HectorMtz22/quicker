@@ -81,6 +81,10 @@ button {
   color: #fff;
   background-color: var(--color4); }
 
+@media screen and (max-width: 800px) {
+  header nav {
+    display: none; } }
+
 .background {
   background: linear-gradient(to right, var(--color3), var(--color5), var(--color4));
   position: fixed;
@@ -130,6 +134,16 @@ button {
     width: 100%; }
   .content .buttons:nth-child(1) {
     margin-right: 10px; }
+
+@media screen and (max-width: 1024px) {
+  .content {
+    grid-template-columns: 2fr 1fr; } }
+
+@media screen and (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr; }
+  .image {
+    display: none; } }
 
 footer {
   position: fixed;
