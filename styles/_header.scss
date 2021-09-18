@@ -12,7 +12,7 @@ header {
       box-shadow: 0px 0px 5px var(--color2);
       height: $header_height - 2 * $padding;
       cursor: pointer;
-      border-radius: 4px;
+      border-radius: 10px;
     }
   }
 }
@@ -81,4 +81,17 @@ button {
 .second {
   color: #fff;
   background-color: var(--color4);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+  }
+  header nav {
+    display: none;
+  }
+  button {
+    font-size: 1.2rem;
+  }
 }

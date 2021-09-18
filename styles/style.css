@@ -42,7 +42,7 @@ header .buttons .shop_cart {
           box-shadow: 0px 0px 5px var(--color2);
   height: 30px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .logo {
@@ -133,6 +133,20 @@ button:hover {
   background-color: var(--color4);
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    font-size: 0.8rem;
+  }
+  header nav {
+    display: none;
+  }
+  button {
+    font-size: 1.2rem;
+  }
+}
+
 .background {
   background: -webkit-gradient(linear, left top, right top, from(var(--color3)), color-stop(var(--color5)), to(var(--color4)));
   background: linear-gradient(to right, var(--color3), var(--color5), var(--color4));
@@ -221,6 +235,13 @@ button:hover {
 
 .content .buttons:nth-child(1) {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 footer {
